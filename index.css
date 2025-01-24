@@ -21,6 +21,7 @@ span{
 }
 
 .heading{
+  width: 80%;
   color: yellow;
   position: absolute;
   z-index: 5;
