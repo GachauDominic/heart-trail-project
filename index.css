@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  text-align: center;
+}
+
+span{
+  background: url("rb_80860.png");
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+}
+
+.heading{
+  color: yellow;
+  position: absolute;
+  z-index: 5;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 5px;
+  display: flex;
+}
+
+.heading img{
+  width: 80px;
+}
+@keyframes animate {
+  0%{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100%{
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(1400deg);
+  }
+}
